@@ -1,0 +1,34 @@
+--dataType dna
+--dataEncodingType dict
+--spcLen 300
+--firstKernelSize 
+--dataTrainFilePaths examples/typeIII_secreted_effectors_prediction/data1/Ptrain.txt examples/typeIII_secreted_effectors_prediction/data1/Ntrain.txt
+--dataTrainLabel 1 0
+--dataTestFilePaths examples/typeIII_secreted_effectors_prediction/data1/Ptest.txt examples/typeIII_secreted_effectors_prediction/data1/Ntest.txt
+--dataTestLabel 1 0
+--outSaveFolderPath tmpOut
+--showFig False
+--saveFig False
+--figDPI 300
+--savePrediction True
+--dataSplitScale None
+--modelLoadFile examples/typeIII_secreted_effectors_prediction/model/protein_CNN-biLSTM_model.py
+--weightLoadFile None
+--shuffleDataTrain False
+--shuffleDataTest False
+--batch_size 80
+--epochs 20
+--useKMer True
+--KMerNum 3
+--inputLength None
+--loss binary_crossentropy
+--optimizer optimizers.Adam()
+--metrics acc
+--modelSaveName tmpMod.json
+--weightSaveName tmpWeight.bin
+--noGPU False
+--paraFile None
+--paraSaveName parameters.txt
+--seed 1
+--labelToMat False
+--verbose True

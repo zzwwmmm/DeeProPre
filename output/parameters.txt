@@ -1,0 +1,34 @@
+--dataType dna
+--dataEncodingType dict
+--spcLen 300
+--firstKernelSize 
+--dataTrainFilePaths data/Ptrain.txt data/Ntrain.txt
+--dataTrainLabel 1 0
+--dataTestFilePaths data/Ptest.txt data/Ntest.txt
+--dataTestLabel 1 0
+--outSaveFolderPath output
+--showFig True
+--saveFig True
+--figDPI 300
+--savePrediction True
+--dataSplitScale None
+--modelLoadFile CNN-biLSTM-attention_model.py
+--weightLoadFile None
+--shuffleDataTrain True
+--shuffleDataTest False
+--batch_size 80
+--epochs 20
+--useKMer True
+--KMerNum 2
+--inputLength None
+--loss binary_crossentropy
+--optimizer optimizers.Adam()
+--metrics acc
+--modelSaveName tmpMod.json
+--weightSaveName tmpWeight.bin
+--noGPU False
+--paraFile None
+--paraSaveName parameters.txt
+--seed 1
+--labelToMat False
+--verbose True
